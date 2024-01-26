@@ -1,0 +1,7 @@
+«TableName«|«Description«
+«DateDim«|«The date dimension contains information about dates. Each row represents a date.
+
+The dimension supports dates from January 1, 0001 to December 30, 9999.«
+«DepartmentDim«|«The department dimension contains information about locations in a facility. Each row represents a bed, room, room group, care area, submitter, department, location, service area, facility profile, or business segment.
+
+For Epic data, data is imported at each level of granularity, with records at each level of granularity containing information about the levels above it.«

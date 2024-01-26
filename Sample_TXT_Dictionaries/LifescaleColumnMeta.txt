@@ -1,0 +1,144 @@
+«TableName«|«ColumnName«|«Description«
+«lifescalex_DateDim«|«CalendarYearOffset_X«|«Offset of the Calendar Year from the current date«
+«lifescalex_DateDim«|«DateKey«|«Surrogate key used to uniquely identify the record. The value is the combination of the four-digit year from 0001 to 9999, the two-digit month from 01 to 12, and the two-digit day from 01 to 31.«
+«lifescalex_DateDim«|«DateValue«|«Value in date format«
+«lifescalex_DateDim«|«DayOfMonth«|«Number of the day of the month for the date from 1 to 31«
+«lifescalex_DateDim«|«DayOfWeek«|«Name of the day of the week«
+«lifescalex_DateDim«|«DayOfWeekAbbreviation«|«Abbreviated name of the day of the week«
+«lifescalex_DateDim«|«DayOfYear«|«Number of the day of the year for the date from 1 to 366«
+«lifescalex_DateDim«|«DisplayString«|«Display string for the date formatted by the configuration settings«
+«lifescalex_DateDim«|«EpicDat«|«Epic contact date sequence number for the date. The value is 121,531 minus the number of days since December 31, 1840. This column will be NULL for dates earlier than December 31, 1840 and dates later than September 27, 2173.«
+«lifescalex_DateDim«|«EpicDte«|«Number of days since December 31, 1840 for the date. This column will be NULL for dates earlier than December 31, 1840 and dates later than September 27, 2173.«
+«lifescalex_DateDim«|«EpicInstantAtMidnight«|«The point in time for midnight of the date.  The value is the number of seconds since midnight on December 31, 1840. This column will be NULL for dates earlier than December 31, 1840.«
+«lifescalex_DateDim«|«FiscalIsoWeekNumber_X«|«Number of the fiscal week since the beginning of the fiscal year for the date as defined by the International Organization for Standardization (ISO)«
+«lifescalex_DateDim«|«FiscalIsoWeekYear_X«|«String containing the concatenation of the two-digit fiscal week number, a space, and the four-digit fiscal year as defined by the International Organization for Standardization (ISO)«
+«lifescalex_DateDim«|«FiscalIsoYearWeek_X«|«String containing the concatenation of the four-digit fiscal year, a space, and the two-digit fiscal week number as defined by the International Organization for Standardization (ISO)«
+«lifescalex_DateDim«|«FiscalMonth«|«Fiscal month of the year for the date from 1 to 12. This column will be NULL for fiscal dates that are earlier than January 1, 1753 or later than December 31, 9999.«
+«lifescalex_DateDim«|«FiscalMonthYear_X«|«Fiscal Month and Year in "MM YYYY" format«
+«lifescalex_DateDim«|«FiscalQuarter«|«Fiscal quarter of the year for the date from 1 to 4. This column will be NULL for fiscal dates that are earlier than January 1, 1753 or later than December 31, 9999.«
+«lifescalex_DateDim«|«FiscalWeekNumber_X«|«Number of the fiscal week since the beginning of the fiscal year for the date from 1 to 54«
+«lifescalex_DateDim«|«FiscalWeekYear_X«|«String containing the concatenation of the two-digit fiscal week number, a space, and the four-digit fiscal year«
+«lifescalex_DateDim«|«FiscalYear«|«Fiscal year for the date from 1753 to 9999. This column will be NULL for fiscal dates that are earlier than January 1, 1753 or later than December 31, 9999.«
+«lifescalex_DateDim«|«FiscalYearEndDate_X«|«Last Day of the Fiscal Year«
+«lifescalex_DateDim«|«FiscalYearMonth_X«|«Fiscal Year and Month in "YYYYMM" format«
+«lifescalex_DateDim«|«FiscalYearOffset_X«|«Offset of the Fiscal Year from the current date«
+«lifescalex_DateDim«|«FiscalYearStartDate_X«|«First Day of the Fiscal Year«
+«lifescalex_DateDim«|«FiscalYearWeek_X«|«String containing the concatenation of the four-digit fiscal year, a space, and the two-digit fiscal week number«
+«lifescalex_DateDim«|«FormattedFiscalLongQuarterYear_X«|«Fiscal Quarter and Year of the date in "Quarter N, YYYY" format«
+«lifescalex_DateDim«|«FormattedFiscalShortQuarterYear_X«|«Fiscal Quarter and Year of the date in "Qtr N, YYYY" format«
+«lifescalex_DateDim«|«FormattedLongQuarterYear_X«|«Quarter and Year of the date in "Quarter N, YYYY" format«
+«lifescalex_DateDim«|«FormattedMonthYear«|«String containing the concatenation of the month name, a space, and the four-digit year«
+«lifescalex_DateDim«|«FormattedQuarterNumber«|«String containing the concatenation of "Q" and the number of the quarter for the date«
+«lifescalex_DateDim«|«FormattedQuarterYear«|«String containing the concatenation of the two-digit quarter (Q + quarter number), a space, and the four-digit year«
+«lifescalex_DateDim«|«FormattedShortMonthYear_X«|«Month and Year of the date in "MMM YYYY" format.«
+«lifescalex_DateDim«|«FormattedShortQuarterYear_X«|«Quarter and Year of the date in "Qtr N, YYYY" format«
+«lifescalex_DateDim«|«IndexDayOfWeek«|«Number of the day of the week for the date from 1 to 7. The first day of the week is set in the configuration settings«
+«lifescalex_DateDim«|«IsDayAfterHoliday«|«1/0 column that indicates whether the date is the day after a recognized holiday. This column returns 1 if the date is the day after a holiday and 0 if the date isn't a day after a holiday.«
+«lifescalex_DateDim«|«IsDayBeforeHoliday«|«1/0 column that indicates whether the date is the day before a recognized holiday. This column returns 1 if the date is the day before a holiday and 0 if the date isn't a day before a holiday.«
+«lifescalex_DateDim«|«IsHoliday«|«1/0 column that indicates whether the date is a recognized holiday. This column returns 1 if the date is a holiday and 0 if the date isn't a holiday. This column is based entirely on DATE_DIMENSION.HOLIDAY_YN in Clarity.«
+«lifescalex_DateDim«|«IsoWeekNumber«|«Number of the week since the beginning of the year for the date as defined by the International Organization for Standardization (ISO)«
+«lifescalex_DateDim«|«IsoWeekYear«|«String containing the concatenation of the two-digit week number, a space, and the four-digit year as defined by the International Organization for Standardization (ISO)«
+«lifescalex_DateDim«|«IsoYearWeek«|«String containing the concatenation of the four-digit year, a space, and the two-digit week number as defined by the International Organization for Standardization (ISO)«
+«lifescalex_DateDim«|«IsWeekendIncludingFriday«|«1/0 column that indicates whether the date is on a weekend. This column returns 1 if the date is on a weekend and 0 if the date is on a weekday. Here, weekend is defined as Friday, Saturday, and Sunday.«
+«lifescalex_DateDim«|«LastFridayDate«|«Date of the Friday prior to the date. If the date is a Friday, this column holds that date value. This column will be NULL for dates earlier than January 5, 1753.«
+«lifescalex_DateDim«|«MonthEndDate«|«Date of the last day of the month for the date. This column will be NULL for dates earlier than January 1, 1753.«
+«lifescalex_DateDim«|«MonthName«|«Name of the month for the date«
+«lifescalex_DateDim«|«MonthNameAbbreviation«|«Abbreviated name of the month for the date«
+«lifescalex_DateDim«|«MonthNumber«|«Number of the month of the year for the date from 1 to 12«
+«lifescalex_DateDim«|«MonthOffset_X«|«Offset of the Month from the current date«
+«lifescalex_DateDim«|«MonthStartDate«|«Date of the first day of the month for the date. This column will be NULL for dates earlier than January 1, 1753.«
+«lifescalex_DateDim«|«MonthYear«|«String containing the concatenation of the two-digit month, a space, and the four-digit year«
+«lifescalex_DateDim«|«NextYearDate«|«Date one year after the date«
+«lifescalex_DateDim«|«OccurrenceInMonth«|«Number of times the day of the week has occurred in the month for the date from 1 to 5«
+«lifescalex_DateDim«|«PastCurrentFutureDateFlag_X«|«Past / Current / Future date flag«
+«lifescalex_DateDim«|«PayPeriodEndDate_X«|«Pay Period End Date«
+«lifescalex_DateDim«|«PreviousYearDate«|«Date one year prior to the date. This column will be NULL for dates earlier than January 1, 1754.«
+«lifescalex_DateDim«|«QuarterEndDate«|«Date of the last day of the quarter for the date. This column will be NULL for dates earlier than January 1, 1753.«
+«lifescalex_DateDim«|«QuarterNumber«|«Number of the quarter for the date from 1 to 4«
+«lifescalex_DateDim«|«QuarterOffset_X«|«Offset of the Quarter from the current date«
+«lifescalex_DateDim«|«QuarterStartDate«|«Date of the first day of the quarter for the date. This column will be NULL for dates earlier than January 1, 1753.«
+«lifescalex_DateDim«|«QuarterYear«|«String containing the concatenation of the one-digit quarter, a space, and the four-digit year«
+«lifescalex_DateDim«|«TomorrowDate«|«The day following the date«
+«lifescalex_DateDim«|«Weekend«|«1/0 column that indicates whether the date is on a weekend. This column returns 1 if the date is on a weekend and 0 if the date is on a weekday.«
+«lifescalex_DateDim«|«WeekEndDate«|«Date of the last day of the week for the date. This column will be NULL for dates earlier than January 1, 1753.«
+«lifescalex_DateDim«|«WeekNumber«|«Number of the week since the beginning of the year for the date from 1 to 54«
+«lifescalex_DateDim«|«WeekStartDate«|«Date of the first day of the week for the date. This column will be NULL for dates earlier than January 1, 1753.«
+«lifescalex_DateDim«|«WeekYear«|«String containing the concatenation of the two-digit week number, a space, and the four-digit year«
+«lifescalex_DateDim«|«Year«|«Year for the date from 0001 to 9999«
+«lifescalex_DateDim«|«YearEndDate«|«Date of the last day of the year for the date. This column will be NULL for dates earlier than January 1, 1753.«
+«lifescalex_DateDim«|«YearFormattedMonth«|«String containing the concatenation of the four-digit year, a space, and the month name«
+«lifescalex_DateDim«|«YearFormattedQuarter«|«String containing the concatenation of the four-digit year, a space, and the two-digit quarter (Q + quarter number)«
+«lifescalex_DateDim«|«YearMonth«|«String containing the concatenation of the four-digit year and the two-digit month«
+«lifescalex_DateDim«|«YearQuarter«|«String containing the concatenation of the four-digit year, a space, and the one-digit quarter«
+«lifescalex_DateDim«|«YearStartDate«|«Date of the first day of the year for the date. This column will be NULL for dates earlier than January 1, 1753.«
+«lifescalex_DateDim«|«YearWeek«|«String containing the concatenation of the four-digit year, a space, and the two-digit week number«
+«lifescalex_DepartmentDim«|«_CreationInstant«|«The date and time the record was created«
+«lifescalex_DepartmentDim«|«_DeletedFromSourceClarity«|«1/0 column that indicates whether the record is deleted from the Clarity source«
+«lifescalex_DepartmentDim«|«_HasSourceClarity«|«1/0 column that indicates whether the record is influenced by the Clarity source«
+«lifescalex_DepartmentDim«|«_IsDeleted«|«1/0 column that indicates whether the record is deleted«
+«lifescalex_DepartmentDim«|«_IsDeletedByMerge«|«1/0 column that indicates whether the record was deleted by a merge or unmerge«
+«lifescalex_DepartmentDim«|«_IsInferred«|«1/0 column that indicates whether the record is inferred«
+«lifescalex_DepartmentDim«|«_LastUpdatedInstant«|«The date and time the record was last updated«
+«lifescalex_DepartmentDim«|«_MostRecentPackageToImpactRecord«|«The name of the most recent package to impact the record«
+«lifescalex_DepartmentDim«|«_NumberOfSources«|«The number of sources contributing to the record«
+«lifescalex_DepartmentDim«|«_PrimaryPackageToImpactRecord«|«The name of the primary package to impact the record«
+«lifescalex_DepartmentDim«|«Address«|«Associated street address.«
+«lifescalex_DepartmentDim«|«BedEpicId«|«Epic ID of the bed. This column identifies Grand Central bed (BED) records.«
+«lifescalex_DepartmentDim«|«BedInCensus«|«1/0 column that indicates whether the bed should be included in census reporting. This column returns 1 if the bed should be included in census reporting and 0 if the bed shouldn't be included in census reporting.«
+«lifescalex_DepartmentDim«|«BedName«|«Name of the bed«
+«lifescalex_DepartmentDim«|«CareAreaEpicId«|«Epic ID of the care area. This column identifies care area (LED) records.«
+«lifescalex_DepartmentDim«|«CareAreaName«|«Name of the care area«
+«lifescalex_DepartmentDim«|«City«|«Associated city«
+«lifescalex_DepartmentDim«|«Country«|«Associated country«
+«lifescalex_DepartmentDim«|«County«|«Associated county«
+«lifescalex_DepartmentDim«|«DepartmentAbbreviation«|«Abbreviated department name«
+«lifescalex_DepartmentDim«|«DepartmentCenter«|«Center to which the department belongs«
+«lifescalex_DepartmentDim«|«DepartmentEpicId«|«Epic ID of the department. This column identifies department (DEP) records.«
+«lifescalex_DepartmentDim«|«DepartmentExternalName«|«External name of the department or submitter, often used in patient correspondence«
+«lifescalex_DepartmentDim«|«DepartmentKey«|«Surrogate key used to uniquely identify the record«
+«lifescalex_DepartmentDim«|«DepartmentLevelOfCareGrouper«|«Level of care reporting grouper of the department«
+«lifescalex_DepartmentDim«|«DepartmentName«|«Name of the department or submitter«
+«lifescalex_DepartmentDim«|«DepartmentServiceGrouper«|«Service reporting grouper of the department«
+«lifescalex_DepartmentDim«|«DepartmentSpecialty«|«Specialty practiced in the department«
+«lifescalex_DepartmentDim«|«DepartmentSpecialtyAbbreviation«|«Abbreviation for the specialty practiced in the department«
+«lifescalex_DepartmentDim«|«DepartmentSpecialtyEpicId«|«Epic ID of the specialty practiced in the department«
+«lifescalex_DepartmentDim«|«DepartmentType«|«Primary type of the department«
+«lifescalex_DepartmentDim«|«EmrParticipantLevel«|«Level of patient integration with the Electronic Medical Record. For Epic data, this column is only populated for submitters and can contain Participating, Non-Participating, or Participating without patient creation.«
+«lifescalex_DepartmentDim«|«HomeCareCCN«|«This column stores the CCN associated with the home health or hospice agency associated with this department.«
+«lifescalex_DepartmentDim«|«IsBed«|«1/0 column that indicates whether this is a bed. This column returns 1 if this is a bed and 0 if this is not a bed.«
+«lifescalex_DepartmentDim«|«IsBusinessSegment«|«1/0 column that indicates whether this is a business segment. This column returns 1 if this is a business segment and 0 if this is not a business segment.«
+«lifescalex_DepartmentDim«|«IsCareArea«|«1/0 column that indicates whether this is a care area. This column returns 1 if this is a care area and 0 if this is not a care area.«
+«lifescalex_DepartmentDim«|«IsDepartment«|«1/0 column that indicates whether this is a department. This column returns 1 if this is a department and 0 if this is not a department.«
+«lifescalex_DepartmentDim«|«IsFacilityProfile«|«1/0 column that indicates whether this is a facility profile. This column returns 1 if this is a facility profile and 0 if this is not a facility profile.«
+«lifescalex_DepartmentDim«|«IsLocation«|«1/0 column that indicates whether this is a location. This column returns 1 if this is a location and 0 if this is not a location.«
+«lifescalex_DepartmentDim«|«IsRoom«|«1/0 column that indicates whether this is a room. This column returns 1 if this is a room and 0 if this is not a room.«
+«lifescalex_DepartmentDim«|«IsRoomGroup«|«1/0 column that indicates whether this is a room group. This column returns 1 if this is a room group and 0 if this is not a room group.«
+«lifescalex_DepartmentDim«|«IsServiceArea«|«1/0 column that indicates whether this is a service area or facility profile. This column returns 1 if this is a service area or facility profile and 0 if not.«
+«lifescalex_DepartmentDim«|«IsServiceAreaOrBusinessSegment«|«1/0 column that indicates whether this is a service area, facility profile, or business segment. This column returns 1 if this is a service area, facility profile, or business segment and 0 if not.«
+«lifescalex_DepartmentDim«|«IsSubmitter«|«1/0 column that indicates whether this is a submitter. This column returns 1 if this is a submitter and 0 if this is not a submitter.«
+«lifescalex_DepartmentDim«|«LocationAbbreviation«|«Abbreviated name of the location«
+«lifescalex_DepartmentDim«|«LocationCcn«|«Centers for Medicare and Medicaid Services certification number (CCN) for the location«
+«lifescalex_DepartmentDim«|«LocationCcnEpicId«|«Epic ID of the Centers for Medicare and Medicaid Services certification number (CCN) for the location
+
+«
+«lifescalex_DepartmentDim«|«LocationEpicId«|«Epic ID of the location. This column identifies facility profile (EAF) records with a type of 2-Location.«
+«lifescalex_DepartmentDim«|«LocationName«|«Name of the location«
+«lifescalex_DepartmentDim«|«Name«|«Name of the location in the facility«
+«lifescalex_DepartmentDim«|«OtherAreaName«|«Name of the area outside the facility structure. For Epic data, this includes Patient Location Facility (PLF) records with a type of 7-Other.«
+«lifescalex_DepartmentDim«|«ParentLocationEpicId«|«Epic ID of the parent location. This column identifies facility profile (EAF) records with a type of 2-Location.«
+«lifescalex_DepartmentDim«|«ParentLocationName«|«Name of the parent location«
+«lifescalex_DepartmentDim«|«PostalCode«|«Associated postal code«
+«lifescalex_DepartmentDim«|«RegionEpicId«|«Epic ID of the region. This column identifies facility profile (EAF) records with a type of 12-Region.«
+«lifescalex_DepartmentDim«|«RegionName«|«The name of the region«
+«lifescalex_DepartmentDim«|«RestrictedDepartment«|«1/0 column that indicates whether the department is a restricted department. This column returns 1 if the department is a restricted department and 0 if the department isn't a restricted department.«
+«lifescalex_DepartmentDim«|«RoomEpicId«|«Epic ID of the room. This column identifies Grand Central room (ROM) records.«
+«lifescalex_DepartmentDim«|«RoomGroupEpicId«|«Epic ID of the room group. This column identifies location (EAF) records.«
+«lifescalex_DepartmentDim«|«RoomGroupEpicId_X«|«Epic ID of the room group.«
+«lifescalex_DepartmentDim«|«RoomGroupName«|«Name of the group of rooms to which the room belongs. For Epic data, this column is only populated for operating rooms.«
+«lifescalex_DepartmentDim«|«RoomName«|«Name of the room«
+«lifescalex_DepartmentDim«|«ServiceAreaEpicId«|«Epic ID of the service area, facility profile, or business segment. This column identifies facility profile (EAF) records with a type of 1-Facility Profile, 4-Service Area, or 11-Business Segment.«
+«lifescalex_DepartmentDim«|«ServiceAreaName«|«Name of the service area, facility profile, or business segment«
+«lifescalex_DepartmentDim«|«StateOrProvince«|«Associated state or province«
+«lifescalex_DepartmentDim«|«StateOrProvinceAbbreviation«|«Abbreviated name of the associated state or province«
+«lifescalex_DepartmentDim«|«SubmitterEpicId«|«Epic ID of the submitter. This column identifies submitter (SMT) records.«
+«lifescalex_DepartmentDim«|«Type«|«Type of submitter. For Epic data, this column is only populated for submitters and can contain Health Agency, Research, or other values.«
