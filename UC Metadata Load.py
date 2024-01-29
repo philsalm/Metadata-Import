@@ -22,8 +22,10 @@ for row in df_data_dict.collect():
     table = row[0]
     col = row[1]
     desc = row[2].replace("'", "\\'")
-    spark.sql(f"ALTER TABLE {catalog}.{schema}.{table} ALTER COLUMN {col} COMMENT '{desc}'")
-
+    try:# If a column is in the dict but not in catalog, the sql statement will fail. The 'try' statement will allow the loop to continue regardless.
+        spark.sql(f"ALTER TABLE {catalog}.{schema}.{table} ALTER COLUMN {col} COMMENT '{desc}'")
+    except:
+        pass
 
 
 # COMMAND ----------
@@ -68,10 +70,16 @@ for row in column_dict_df.collect():
     table = row[0]
     col = row[1]
     desc = row[2].replace("'", "\\'")
-    spark.sql(f"ALTER TABLE {catalog}.{schema}.{table} ALTER COLUMN {col} COMMENT '{desc}'")
+    try: # If a column is in the dict but not in catalog, the sql statement will fail. The 'try' statement will allow the loop to continue regardless.
+        spark.sql(f"ALTER TABLE {catalog}.{schema}.{table} ALTER COLUMN {col} COMMENT '{desc}'")
+    except:
+        pass
 
 # update the table comments 
 for row in table_dict_df.collect():
     table = row[0]
     desc = row[1].replace("'", "\\'")
-    spark.sql(f"ALTER TABLE {catalog}.{schema}.{table} SET TBLPROPERTIES ('comment' = '{desc}')")
+    try: # If a table is in the dict but not in catalog, the sql statement will fail. The 'try' statement will allow the loop to continue regardless.
+        spark.sql(f"ALTER TABLE {catalog}.{schema}.{table} SET TBLPROPERTIES ('comment' = '{desc}')")
+    except:
+        pass
